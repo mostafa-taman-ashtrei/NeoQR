@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import { ChakraProvider } from '@chakra-ui/react';
+import Nav from './components/Nav';
 
 const App: React.FC = () => (
-    <div className="App">
-        <h2>Hello World!</h2>
-    </div>
+    <ChakraProvider>
+        <Nav />
+    </ChakraProvider>
+
 );
 
 export default App;
