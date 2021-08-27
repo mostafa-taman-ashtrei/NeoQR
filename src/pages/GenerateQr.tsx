@@ -6,6 +6,19 @@ import QRcode from 'qrcode.react';
 const GenerateQr: React.FC = () => {
     const [qrData, setQrData] = useState<string>('');
 
+    const downloadQR = () => {
+        const qrCanvasElement: HTMLCanvasElement | null = document.querySelector('canvas');
+        if (qrCanvasElement == null) return;
+        const url = qrCanvasElement.toDataURL('imgae/png').replace('image/png', 'image/octet-stream');
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.download = 'NEOQR.png';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    };
+
     return (
         <Grid h="200px" gap={4} m={4}>
             <GridItem colSpan={4}>
@@ -41,9 +54,9 @@ const GenerateQr: React.FC = () => {
                                     color="white"
                                     aria-label="Download QR code"
                                     icon={<DownloadIcon />}
+                                    onClick={downloadQR}
                                 />
                             </Tooltip>
-
                         </Center>
                     </GridItem>
                 )
