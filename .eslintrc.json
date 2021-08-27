@@ -60,7 +60,9 @@
         "@typescript-eslint/no-shadow": [
             "error"
         ],
-        "react/jsx-props-no-spreading": 0
+        "react/jsx-props-no-spreading": 0,
+        "arrow-body-style": "off",
+        "object-curly-newline": "off"
     },
     "settings": {
         "import/resolver": {

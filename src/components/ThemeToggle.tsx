@@ -9,9 +9,10 @@ const ThemeToggle: React.FC = () => {
             aria-label="Toggle Dark Switch"
             icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
             onClick={toggleColorMode}
-            size="md"
+            // size="md"
             fontSize="xl"
-            variant="link"
+            m="0.5"
+            variant="outline"
         />
     );
 };
