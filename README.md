@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# NEOQR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NEOQR is a react app that allows you to generate and scan qr codes for free.
+
+### Languages and Tools Used:
+
+- <img  alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /> vs code
+
+
+- <img   alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" /> Typescript
+
+
+
+
+- <img   alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> React.js
+
+
+- <img   alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" /> Git
+
+- <img   alt="eslint" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/eslint/eslint.png" /> eslint
+
+<br />
+
+# Getting Started
+
+These instructions will get the project up and running on your local machine for development 
+
+## Installation
+1. clone the project using git or download zip
+```bash
+git clone https://github.com/neoScriptscode/NeoQR.git
+```
+2.  run 
+```bash
+cd NeoQR && npm i
+```
+
 
 ## Available Scripts
 
@@ -39,8 +73,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run lint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Scans and displays all the eslint errors in your codebase according to the rules specified in the .eslintrc.json file
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+### `npm run lint:fix`
+
+Fixes all the auto fixable eslint errors in your codebase according to the rules specified in the .eslintrc.json file
