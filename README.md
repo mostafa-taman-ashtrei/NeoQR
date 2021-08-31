@@ -1,6 +1,6 @@
 # NEOQR
 
-NEOQR is a react app that allows you to generate and scan qr codes for free.
+NEOQR is a react app that allows you to generate and scan qr codes for free. You can try the [DEMO](https://neoqr.herokuapp.com/).
 
 ### Languages and Tools Used:
 
